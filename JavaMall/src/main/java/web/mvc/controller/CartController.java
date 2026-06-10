@@ -28,7 +28,7 @@ public class CartController {
     // 유저별 장바구니 임시 저장소 (서버 재시작 시 초기화됨)
     private static final Map<String, Map<String, Integer>> cartStore = new HashMap<>();
 
-    /** 장바구니 담기 */
+    /** 장바구니 담기 */ //
     @PostMapping
     public ResponseEntity<?> putCart(@RequestBody CartItemRequest req, Authentication auth) {
         String userId = getLoginUser(auth);
